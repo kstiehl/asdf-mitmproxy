@@ -8,7 +8,7 @@
 
 > Windows installation: This tool only works under WSL. Please check this [documents](https://docs.mitmproxy.org/stable/overview-installation/#windows)
 
-## Build History
+# Build History
 
 [![Build history](https://buildstats.info/github/chart/NeoHsu/asdf-mitmproxy?branch=master)](https://github.com/NeoHsu/asdf-mitmproxy/actions)
 
