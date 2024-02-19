@@ -34,7 +34,7 @@ get_platform() {
   local platform="linux"
 
   case "$(uname | tr '[:upper:]' '[:lower:]')" in
-    darwin) platform="osx" ;;
+    darwin) platform="macos" ;;
   esac
 
   echo -n $platform
@@ -52,8 +52,8 @@ download_release() {
   platform=$(get_platform)
 
   # mitmproxy release URL
-  url="https://snapshots.mitmproxy.org/${version}/mitmproxy-${version}-${platform}.tar.gz"
-
+  url="https://downloads.mitmproxy.org/${version}/mitmproxy-${version}-${platform}.tar.gz"
+  echo $url
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
 }
